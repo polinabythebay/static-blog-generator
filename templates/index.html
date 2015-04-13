@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+
+
+{% block head %}
+
+<!-- Stylesheets -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+
+{% endblock head %}
+
+
+{% block content %}
+
+	<img src="static/cat_butterfly.png" alt="Cat Butterfly" style="width:304px;height:228px">
+
+	<div id="header">
+		<h1>  </h1>
+	</div>
+
+		<h4> About me </h4>
+		<div id="about">
+		Hi, I'm Polina. I grew up in Alaska and graduated from Wellesley College in 2014. I currently live in San Francisco. I enjoy dabbling in web and mobile development. 
+		Find me on 
+		<a href="https://github.com/polinadotio">github</a>,
+		<a href="https://twitter.com/polinadotio">twitter</a>, or
+		<a href="http://instagram.com/psoshnin">instagram</a>.
+
+		</div>
+	
+		<h4> Projects </h4>
+	<div id="projects">
+		
+		<ul>
+			<li>Frozen Flask: static site generator, hosted with Github pages. Powers this site :) </li>
+			<!-- <li>Rails Application: Polling, data visualization, lots of Rails awesomeness</li>
+			<li>Rails Application: my first ecommerce site, using stripe</li>
+			<li>Ember.js</li>
+			<li>Sinatra- lightweight ruby web framework</li>
+			<li>REST API using Grape</li>
+			<li>Rails application with Angular.js</li>
+			<li>Django Application: admin, Ajax, story submissions, URL shortener</li>
+			<li>Node.js: create a basic blog site</li>
+			<li>iOS app: My first swift app, a tip calculator. Uses basic swift model + Apple best practices for UI/UX </li>
+			<li>iOS app: how I created my first simple game</li>
+			<li>My RubyGem library</li> -->
+		</ul>
+
+		</div>
+
+	<div id="posts">
+		<h4> Blog posts </h4>
+		{% for post in posts %}
+			<div class="post">
+				<span class="post-date"> {{ post.date|date }}</span>
+				<a href="{{ post.url()}} " class="post-title">
+					{{ post.title }} {% if post.subtitle %}: {{ post.subtitle }}
+					{% endif %}
+
+				</a>
+			</div>	
+
+		{% endfor %}
+	</div>	
+
+{% endblock content %}

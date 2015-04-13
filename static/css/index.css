@@ -1,0 +1,41 @@
+#about {
+    /*padding-top: 2em;*/
+    font-size: 0.85em;
+    text-align: justify;
+    padding-left: 25em;
+    padding-right: 25em;
+
+}
+
+#projects {
+    /*padding-top: 2em;*/
+    font-size: 0.85em;
+    text-align: justify;
+    padding-left: 25em;
+    padding-right: 25em;
+
+}
+
+#posts { line-height: 1.5em; }
+
+#posts a {
+    text-decoration: none;
+    color: #000000;
+    padding-bottom: 2px;
+}
+
+#posts a:hover {
+    color: #0080ff;
+    border-color: #999999;
+    border-width: 0px 0px 1px 0px;
+    border-style: dotted;
+}
+
+#posts .post-date {
+    width: 12em;
+    font-size: 0.6em;
+    vertical-align: middle;
+    text-align: right;
+    color: #999999;
+    padding-right: 10px;
+}

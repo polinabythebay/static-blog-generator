@@ -1,0 +1,64 @@
+body {
+    text-align: center;
+    letter-spacing: 0.01em;
+    font-family: verdana, helvetica, sans-serif;
+    /*background-color: #F8F8FF*/
+}
+
+/*Lets my images resize themselves to fit the div container*/
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#container { margin: 50px auto 10px auto; }
+
+h1, h2 {
+    /*font-family: Georgia, serif;*/
+    font-family: verdana, helvetica, sans-serif;
+    font-weight: normal;
+    letter-spacing: -0.075em;
+}
+
+h1 { font-size: 40px; }
+
+a {
+    text-decoration: none;
+    color: #000099;
+    padding-bottom: 2px;
+}
+#content {
+    padding-top: 2em;
+    font-size: 0.85em;
+    text-align: justify;
+    padding-left: 20em;
+    padding-right: 20em;
+
+}
+
+a:hover {
+    color: #000099;
+    border-color: #999999;
+    border-width: 0px 0px 1px 0px;
+    border-style: dotted;
+}
+
+pre, code { font-size: 15px; border: 1px solid #e8e8e8; border-radius: 3px; background-color:  #eef; }
+
+
+/*$base03:    #002b36;
+$base02:    #073642;
+$base01:    #586e75;
+$base00:    #657b83;
+$base0:     #839496;
+$base1:     #93a1a1;
+$base2:     #eee8d5;
+$base3:     #fdf6e3;
+$yellow:    #b58900;
+$orange:    #cb4b16;
+$red:       #dc322f;
+$magenta:   #d33682;
+$violet:    #6c71c4;
+$blue:      #268bd2;
+$cyan:      #2aa198;
+$green:     #859900;*/
